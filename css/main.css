@@ -77,6 +77,8 @@
   letter-spacing: 10%;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: left;
+  margin-left: 80px;
 }
 .hero__primary-title {
   color: var(--white-text-color);
@@ -95,10 +97,13 @@
   max-width: 336px;
 }
 
+.icon {
+  fill: var(--icons-color);
+}
+
 .line-box {
   position: relative;
   text-align: center;
-  width: 310px;
 }
 
 .line-accent {
@@ -109,11 +114,6 @@
   width: 60px;
   height: 1px;
   background-color: rgba(157, 164, 189, 0.6);
-  margin-right: 20px;
-}
-
-.icon {
-  fill: var(--icons-color);
 }
 
 body {

@@ -28,6 +28,8 @@
         letter-spacing: 10%;
         text-transform: uppercase;
         margin-bottom: 20px;
+        text-align: left;
+        margin-left: 80px;
     }
 
     &__primary-title{
@@ -50,19 +52,5 @@
 }
 
 
-.line-box {
-    position: relative;
-    text-align: center;
-    width: 310px;
-}
 
-.line-accent{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 60px;
-    height: 1px;
-    background-color: rgba(157, 164, 189, 0.6);
-    margin-right: 20px;
-}
 
