@@ -1,0 +1,44 @@
+.btn-burger{
+    padding: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0) ;
+}
+
+.btn-light,
+.btn-dark{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.333;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    border-radius: 25px;
+    padding: 12px 20px;
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+
+}
+
+.btn-light{
+    color: var(--dark-text-color);
+    background-color: var(--primary-bg-color);
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--white-text-color);
+    }
+}
+
+.btn-dark{
+    color: var(--white-text-color);
+    background-color: rgb(17, 19, 25);
+    transition: background-color 250ms var(--timing-function);
+
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}

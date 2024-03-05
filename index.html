@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+    <meta name="description" content="Barbershop landing page" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -16,27 +14,113 @@
   <body>
     <div class="wrapper">
       <header>
+        <!-- Hero -->
         <section class="hero">
           <div class="hero__icons-box">
-            <svg class="icon icon-logo" width="69" height="56">
-                  <use href="./img/icons.svg#icon-logo"></use></svg
-                >
-                <svg class="icon icon-burger" width="40" height="40">
-                  <use href="./img/icons.svg#icon-burger-menu"></use></svg
-                >
-          </div>   
+            <svg alt="barbershop logo" class="icon-logo" width="69" height="56">
+              <use href="./img/icons.svg#icon-logo"></use>
+            </svg>
+            <button
+              class="btn-burger"
+              type="button"
+              aria-label="burger menu button"
+            >
+              <svg
+                alt="burger menu"
+                class="icon icon-burger"
+                width="40"
+                height="40"
+              >
+                <use href="./img/icons.svg#icon-burger-menu"></use>
+              </svg>
+            </button>
+          </div>
           <div class="line-box">
-            <div class="line-accent"></div>
-              <h2 class="hero__secodary-title">A hair salon for men in Kyiv </h2>         
-          </div>                  
+            <div class="line-light"></div>
+            <h2 class="hero__secodary-title">A hair salon for men in Kyiv</h2>
+          </div>
           <h1 class="hero__primary-title">BarberShop</h1>
-          <p class="hero__text">We are experts in trendy men’s haircuts.
-          <br>
-             We work quickly, carefully and with style</p>
-        </section>
+          <p class="hero__text">
+            We are experts in trendy men’s haircuts. We work quickly, carefully
+            and with style
+          </p>
+          </section>
       </header>
-      <main>Main</main>
+      <main>
+        <!-- About us -->
+        <section class="about container">
+          <div class="line-box">
+            <div class="line-dark"></div>
+            <h2 class="section-title">About</h2>
+          </div>
+          <h3 class="about__subtitle">Best Barbershop in your city</h3>
+          <p class="about__primary-text">
+            If you want to add more confidence to your image, you should visit
+            us
+          </p>
+          <p class="about__secondary-text">
+            We are a team that never stops at what has been achieved and are
+            thirsty for changes. And when you fall into the hands of our master,
+            you will never be the same again. We are a team that is always "on
+            the same wave" with clients. Therefore, we are always ready to
+            improve everyone who comes to us!
+          </p>
+          <button type="button" aria-label="booking button" class="btn-light">
+            online-booking
+          </button>
+        </section>
+       <!-- Services and prices -->
+        <section class="services container">
+          <div class="line-box">
+            <div class="line-light"></div>
+            <h2 class="section-title services-title">Spend your time with the best masters</h2>
+          </div>          
+          <h3 class="services__subtitle">Services and prices</h3>
+          <ul class="services__box">
+            <li class="services__item">
+            <span>Men’s haircut</span>
+            <span>from 300 uah.</span>
+          </li>
+           <li class="services__item">
+            <span>Beard trim</span>
+            <span>from 200 uah.</span>
+          </li>
+           <li class="services__item">
+            <span>Mustache trim</span>
+            <span>from 200 uah.</span>
+          </li>
+           <li class="services__item">
+            <span>Straight razor shave</span>
+            <span>from 200 uah.</span>
+          </li>
+           <li class="services__item">
+            <span>Trainee’s haircut</span>
+            <span>from 50 uah.</span>
+          </li>
+           <li class="services__item">
+            <span>Haircut under the nozzle</span>
+            <span>from 200 uah.</span>
+          </li>
+           <li class="services__item">
+            <span>Children’s haircut (0-12 y.o.)</span>
+            <span>from 300 uah.</span>
+          </li>
+           <li class="services__item">
+            <span>Camouflage of grey hair</span>
+            <span>from 200 uah.</span>
+          </li>           
+        </ul>
+         <button type="button" aria-label="booking button" class="btn-dark">
+            online-booking
+          </button> 
+        </section>
+      </main>
       <footer>Footer</footer>
     </div>
   </body>
 </html>
+
+<!-- Посилання на зовнішній ресурс, відкриється у новій вкладці -->
+<!-- <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
+  Facebook
+</a> -->

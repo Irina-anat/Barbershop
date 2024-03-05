@@ -3,6 +3,7 @@
     --primary-text-color: rgb(85, 85, 85);
     --secondary-text-color: rgb(157, 164, 189);
     --white-text-color: rgb(255, 255, 255);
+    --subtitle-color: rgb(255, 255, 255);
     --dark-text-color: rgb(48, 48, 48);
     --icons-color: rgb(255, 255, 255);
     --accent-color: rgb(255, 108, 0);
@@ -12,6 +13,10 @@
 
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desctop: 1600px;
 
 
 

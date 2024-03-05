@@ -1,5 +1,9 @@
 @import './utils/fonts';
 @import './utils/variables';
+@import './utils/mixin';
+@import './utils/breakpoints';
+
+
 
 @import './layout/container';
 @import './layout/header';
@@ -7,8 +11,12 @@
 
 @import './components/buttons';
 @import './components/hero';
-@import './components/icon';
+@import './components/icons';
 @import './components/line-accent';
+@import './components/titles';
+@import './components/about';
+@import './components/services';
+
 
 
 @import './base/base';

@@ -1,0 +1,16 @@
+.icon{
+    color: var(--icons-color);
+    fill: currentColor;
+    transition: color 250ms var(--timing-function);
+    cursor: pointer;
+
+
+    &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
+}
+
+.icon-logo{
+    fill: var(--icons-color);
+}
