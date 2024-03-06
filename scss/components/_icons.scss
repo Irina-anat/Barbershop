@@ -14,3 +14,16 @@
 .icon-logo{
     fill: var(--icons-color);
 }
+
+.icon-social{
+    color: var(--social-icons-color);
+    fill: currentColor;
+    transition: color 250ms var(--timing-function);
+    cursor: pointer;
+
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}

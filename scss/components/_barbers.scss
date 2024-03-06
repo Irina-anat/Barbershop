@@ -1,0 +1,42 @@
+.barbers{
+    background-color: var(--secondary-bg-color);
+
+    &__subtitle{
+        color: rgb(48, 48, 48);
+        font-family: Raleway;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.1667;
+        letter-spacing: 0.05em;
+        text-align: left;
+        margin-bottom: 44px;
+    }
+
+    &__name{
+        color: var(--dark-text-color);
+        font-size: 18px;
+        line-height: 1.389;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+    }
+
+    &__qualification{
+        color: var(--accent-color);
+        font-size: 14px;
+        line-height: 1.357;
+        letter-spacing: 0.02em;
+        margin-bottom: 30px;
+    }
+
+    &__foto{
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        
+}

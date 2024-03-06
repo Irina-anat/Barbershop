@@ -1,0 +1,70 @@
+.advantages{
+    &__subtitle{
+        color: var(--dark-text-color);
+        font-family: Raleway;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.1667;
+        letter-spacing: 0.05em;
+        margin-bottom: 20px;
+    }
+
+    &__text{
+        color: var(--primary-text-color);
+        font-size: 18px;
+        line-height: 1.667;
+        letter-spacing: 0.02em;
+        margin-bottom: 44px;
+        max-width: 418px;
+    }
+
+    &__box{
+        display: flex;
+        gap: 30px;
+        max-width: 418px;
+    }
+
+    &__item{          
+        padding: 20px 35px;
+        background-color: var(--secondary-bg-color);
+    }
+
+    &__number{
+        color: var(--dark-text-color);
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.357;
+        letter-spacing: 0.05em;
+        margin-bottom: 6px;
+    }
+
+    &__symbol{
+        position: absolute;
+        top: 0;
+        color: var(--accent-color);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.375;
+    }
+
+    &__sub-text{
+        color: rgb(48, 48, 48);
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 1.364;
+        text-align: center;
+    }
+}
+
+.column-left__item{
+    margin-bottom: 30px;
+}
+
+.column-right__item{
+    margin-top: 30px;
+}
+
+.number__box{
+    position: relative;
+    text-align: center;
+}

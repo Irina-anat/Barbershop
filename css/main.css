@@ -7,6 +7,7 @@
   --subtitle-color: rgb(255, 255, 255);
   --dark-text-color: rgb(48, 48, 48);
   --icons-color: rgb(255, 255, 255);
+  --social-icons-color: rgb(48, 48, 48);
   --accent-color: rgb(255, 108, 0);
   --primary-bg-color: rgb(255, 255, 255);
   --secondary-bg-color:rgb(247, 247, 247);
@@ -68,7 +69,7 @@
   -webkit-transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
-.btn-light:hover, .btn-light:focus {
+.btn-light:hover {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
@@ -79,7 +80,7 @@
   -webkit-transition: background-color 250ms var(--timing-function);
   transition: background-color 250ms var(--timing-function);
 }
-.btn-dark:hover, .btn-dark:focus {
+.btn-dark:hover {
   background-color: var(--accent-color);
 }
 
@@ -158,6 +159,17 @@
 
 .icon-logo {
   fill: var(--icons-color);
+}
+
+.icon-social {
+  color: var(--social-icons-color);
+  fill: currentColor;
+  -webkit-transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
+  cursor: pointer;
+}
+.icon-social:hover, .icon-social:focus {
+  fill: var(--accent-color);
 }
 
 .line-box {
@@ -283,6 +295,136 @@
     background-image: linear-gradient(180deg, rgb(23, 26, 36), rgba(23, 26, 36, 0.2) 100%), url(../img/services480@2x.jpg);
   }
 }
+.advantages__subtitle {
+  color: var(--dark-text-color);
+  font-family: Raleway;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.1667;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+.advantages__text {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  margin-bottom: 44px;
+  max-width: 418px;
+}
+.advantages__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  max-width: 418px;
+}
+.advantages__item {
+  padding: 20px 35px;
+  background-color: var(--secondary-bg-color);
+}
+.advantages__number {
+  color: var(--dark-text-color);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.357;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+.advantages__symbol {
+  position: absolute;
+  top: 0;
+  color: var(--accent-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.375;
+}
+.advantages__sub-text {
+  color: rgb(48, 48, 48);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.364;
+  text-align: center;
+}
+
+.column-left__item {
+  margin-bottom: 30px;
+}
+
+.column-right__item {
+  margin-top: 30px;
+}
+
+.number__box {
+  position: relative;
+  text-align: center;
+}
+
+.barbers {
+  background-color: var(--secondary-bg-color);
+}
+.barbers__subtitle {
+  color: rgb(48, 48, 48);
+  font-family: Raleway;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.1667;
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin-bottom: 44px;
+}
+.barbers__name {
+  color: var(--dark-text-color);
+  font-size: 18px;
+  line-height: 1.389;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.barbers__qualification {
+  color: var(--accent-color);
+  font-size: 14px;
+  line-height: 1.357;
+  letter-spacing: 0.02em;
+  margin-bottom: 30px;
+}
+.barbers__foto {
+  margin-bottom: 30px;
+}
+.barbers__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.social__item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-bg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body {
   background-color: #FFFFFF;
   font-family: Open Sans, sans-serif;
