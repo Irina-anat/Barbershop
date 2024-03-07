@@ -20,7 +20,7 @@
     }
 }
 
-@mixin for-desktop {
+@mixin for-desktop {             //1600
     @media screen and (min-width: 1200px) {
         @content;
     }
