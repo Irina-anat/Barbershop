@@ -56,6 +56,14 @@
     }
 }
 
+@include for-phone-only {
+    .advantages {
+        &__item {
+            padding: 10px 25px;
+        }
+    }
+}
+
 .column-left__item{
     margin-bottom: 30px;
 }

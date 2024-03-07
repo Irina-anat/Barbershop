@@ -46,3 +46,11 @@
         background-image: linear-gradient(180.00deg, rgb(23, 26, 36), rgba(23, 26, 36, 0.2) 100%), url(../img/services480@2x.jpg);
     }
 }
+
+@include for-phone-only {
+    .services {
+        &__item {
+            font-size: 12px;
+        }
+    }
+}
