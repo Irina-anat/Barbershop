@@ -1,0 +1,13 @@
+.portfolio{
+    &__item{
+        max-width: 418px;
+        margin-bottom: 30px;
+        &:last-child {
+                margin-bottom: 0px;
+            }
+    }
+
+    &__list{
+        margin-top: 71px;
+    }
+}

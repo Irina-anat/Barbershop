@@ -363,6 +363,12 @@
 .barbers {
   background-color: var(--secondary-bg-color);
 }
+.barbers__item {
+  margin-bottom: 64px;
+}
+.barbers__item:last-child {
+  margin-bottom: 0px;
+}
 .barbers__subtitle {
   color: rgb(48, 48, 48);
   font-family: Raleway;
@@ -389,6 +395,7 @@
 }
 .barbers__foto {
   margin-bottom: 30px;
+  max-width: 418px;
 }
 .barbers__description {
   display: -webkit-box;
@@ -423,6 +430,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.portfolio__item {
+  max-width: 418px;
+  margin-bottom: 30px;
+}
+.portfolio__item:last-child {
+  margin-bottom: 0px;
+}
+.portfolio__list {
+  margin-top: 71px;
 }
 
 body {
