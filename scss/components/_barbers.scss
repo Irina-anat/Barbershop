@@ -1,6 +1,15 @@
 .barbers{
     background-color: var(--secondary-bg-color);
 
+    @include for-tablet-landscape{
+        &__box{
+            max-width: 450px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+
     &__item{
         margin-bottom: 64px;
 
@@ -39,6 +48,10 @@
     &__foto{
         margin-bottom: 30px;
         max-width: 418px;
+
+        @include for-tablet-landscape{
+            max-width: 450px;
+        }
     }
 
     &__description {

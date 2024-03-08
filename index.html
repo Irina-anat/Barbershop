@@ -49,7 +49,50 @@
       <main>
         <!-- About us -->
         <section class="about container">
-          <div class="line-box">
+        <div class="about__foto-box">
+          <div class="about__foto">
+            <picture>
+                  <source
+                    srcset="./img/about11600@1x.jpg 1x, ./img/about11600@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./img/about1768@1x.jpg 1x, ./img/about1768@2x.jpg 2x"
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    srcset="./img/about1480@1x.jpg 1x, ./img/about1480@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img loading="lazy"
+                    src="./img/about11600@1x.jpg"
+                    alt="the barber shaves the beard foto"
+                  />
+            </picture>
+          </div>
+          <div class="about__foto">
+            <picture>
+                  <source
+                    srcset="./img/about21600@1x.jpg 1x, ./img/about21600@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./img/about2768@1x.jpg 1x, ./img/about2768@2x.jpg 2x"
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    srcset="./img/about2480@1x.jpg 1x, ./img/about2480@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img loading="lazy"
+                    src="./img/about21600@1x.jpg"
+                    alt="the barber shaves the beard foto"
+                  />
+            </picture>
+          </div>
+        </div>
+        <div class="about__description-box">
+            <div class="line-box">
             <div class="line-dark"></div>
             <h2 class="section-title">About</h2>
           </div>
@@ -68,6 +111,8 @@
           <a type="button" href="#online-booking" class="btn-light">
             online-booking
           </a>
+        </div> 
+          
         </section>
         <!-- Services and prices -->
         <section class="services container">
@@ -167,7 +212,8 @@
         </section>
         <!-- Barbers section -->
         <section class="barbers container">
-          <div class="line-box">
+          <div class="barbers__box">
+            <div class="line-box">
             <div class="line-dark"></div>
             <h2 class="section-title">For true enjoyers of the atmosphere</h2>
           </div>
@@ -411,6 +457,9 @@
               </div>
             </li>
           </ul>
+
+
+          </div>          
         </section>
         <!-- Portfolio section -->
         <section class="portfolio container">
@@ -434,8 +483,7 @@
                     srcset="./img/portfolio/portfolio1480@1x.jpg 1x, ./img/portfolio/portfolio1480@2x.jpg 2x"
                     media="(max-width: 767px)"
                   />
-                  <img
-                    loading="lazy"
+                  <img loading="lazy"
                     src="./img/portfolio/portfolio11600@1x.jpg"
                     alt="barber cuts hair"
                   />

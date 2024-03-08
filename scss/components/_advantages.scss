@@ -16,17 +16,30 @@
         letter-spacing: 0.02em;
         margin-bottom: 44px;
         max-width: 418px;
+
+        @include for-tablet-landscape{
+            max-width: 500px;
+        }
     }
 
     &__box{
         display: flex;
         gap: 30px;
         max-width: 418px;
+
+        @include for-tablet-landscape{
+            margin-left: auto;
+            max-width: 450px;
+        }
     }
 
     &__item{          
         padding: 20px 35px;
         background-color: var(--secondary-bg-color);
+
+        @include for-phone-only{
+        padding: 10px 25px;
+        }
     }
 
     &__number{
@@ -53,14 +66,6 @@
         font-weight: 600;
         line-height: 1.364;
         text-align: center;
-    }
-}
-
-@include for-phone-only {
-    .advantages {
-        &__item {
-            padding: 10px 25px;
-        }
     }
 }
 

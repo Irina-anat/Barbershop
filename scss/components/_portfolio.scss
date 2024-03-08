@@ -5,9 +5,21 @@
         &:last-child {
                 margin-bottom: 0px;
             }
+
+     @include for-tablet-landscape{
+    margin: 0;
+    }
     }
 
     &__list{
         margin-top: 71px;
+
+        @include for-tablet-landscape{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+
     }
 }

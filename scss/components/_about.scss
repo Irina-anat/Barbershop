@@ -2,6 +2,10 @@
     padding-left: 35px;
     padding-right: 35px;
 
+    @include for-tablet-landscape{
+        display: flex;
+    }
+
     &__primary-text{
     color: var(--primary-text-color);
     font-size: 16px;
@@ -9,6 +13,12 @@
     letter-spacing: 0.02em;
     text-align: left;
     margin-bottom: 20px;
+    
+    @include for-tablet-landscape{
+        font-size: 18px;
+        line-height: 1.6667;
+    }
+
     }
 
     &__secondary-text{
@@ -19,6 +29,10 @@
         letter-spacing: 0.02em;
         text-align: left;
         margin-bottom: 40px;
+
+        @include for-tablet-landscape{
+            margin-bottom: 77px;
+        }
     }
 
         &__subtitle {
@@ -31,5 +45,22 @@
             text-align: left;
             margin-bottom: 20px;
             max-width: 306px;
+        }
+
+        &__foto-box{
+        @media screen and (max-width: 767px) {
+              display: none;
+            } 
+            
+        @include for-tablet-landscape{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        } 
+        
+        &__foto{
+        margin-right: 30px;
+        width: 330px;
         }
 }
