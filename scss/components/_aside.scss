@@ -1,0 +1,57 @@
+@media screen and (max-width: 767px) {
+    .aside{
+    display: none;
+    } 
+}
+
+.aside {
+      
+       @include for-tablet-landscape {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 30px;
+        padding-top: 31px;
+        padding-bottom: 140px;
+
+        &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+        
+            &__link {
+                color: var(--dark-text-color);
+                font-size: 11px;
+                font-weight: 600;
+                line-height: 1.364;
+                letter-spacing: 0.2em;
+                transition: color 250ms var(--timing-function);
+        
+                &:hover,
+                &:focus {
+                    color: var(--accent-color);
+                }
+            }
+        
+            &__line {
+                position: absolute;
+                bottom: 40px;
+                left: 50%;
+                width: 1px;
+                height: 60px;
+                background-color: var(--dark-text-color);
+            }
+        
+            &__vertical-text {
+                writing-mode: vertical-lr;
+                transform: rotate(-180deg);
+                white-space: nowrap;
+            }
+    }
+} 
+    
+
+

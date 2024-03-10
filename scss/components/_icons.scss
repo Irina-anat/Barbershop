@@ -1,3 +1,4 @@
+
 .icon{
     color: var(--icons-color);
     fill: currentColor;
@@ -15,6 +16,11 @@
     fill: var(--icons-color);
 }
 
+.aside-logo{
+    color: var(--social-icons-color);
+    fill: currentColor;
+}
+
 .icon-social{
     color: var(--social-icons-color);
     fill: currentColor;
@@ -27,3 +33,4 @@
         fill: var(--accent-color);
     }
 }
+

@@ -1,26 +1,50 @@
 .hero{
+    margin-left:  auto;
+    margin-right: auto;
+
+    &__overlay{
+    @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-left: auto;
     width: 480px;
     max-width: 100%;
     min-height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 31px;
-    padding-top: 40px;
-    padding-right: 39px;
-    padding-bottom: 209px;
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/overlay480@1x.jpg) ;
+    padding: 40px 39px 209px 31px;
+    }
+        
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    url(../img/overlay480@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-
+    @include retina {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/overlay480@2x.jpg);
+    }
+        
+    @include for-tablet-landscape {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/overlay768@1x.jpg);
+    min-width: 570px;
+    width: 100%;
+    min-height: 680px;
+    padding: 40px 20px;
+        
+    @include retina {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/overlay768@2x.jpg);
+    }
+    }
+    }
+ 
     &__icons-box{
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 112.54px;
-    }
 
+    @media screen and (min-width: 767px) {
+    display: none;
+    }
+    }
 
     &__secodary-title{
         color: rgba(157, 164, 189, 0.6);
@@ -31,8 +55,7 @@
         text-transform: uppercase;
         margin-bottom: 20px;
         text-align: left;
-        margin-left: 80px;
-        
+        margin-left: 80px;        
     }
 
     &__primary-title{
@@ -52,15 +75,13 @@
         letter-spacing: 0.02em;
         max-width: 336px;
     }
-}
-
-
-
-@include retina {
-    .hero {
-        background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/overlay480@2x.jpg);
+    
+    @include for-tablet-landscape{
+        display: flex;
+        padding: 0 39px;
     }
 }
+
 
 @include for-phone-only{
     .hero{

@@ -16,103 +16,154 @@
       <header>
         <!-- Hero -->
         <section class="hero">
-          <div class="hero__icons-box">
-            <svg alt="barbershop logo" class="icon-logo" width="69" height="56">
-              <use href="./img/icons.svg#icon-logo"></use>
-            </svg>
-            <button
-              class="btn-burger"
-              type="button"
-              aria-label="burger menu button"
-            >
+          <div class="aside">
+            <div>
               <svg
-                alt="burger menu"
-                class="icon icon-burger"
-                width="40"
-                height="40"
+                alt="barbershop logo"
+                class="icon-logo aside-logo"
+                width="69"
+                height="56"
               >
-                <use href="./img/icons.svg#icon-burger-menu"></use>
+                <use href="./img/icons.svg#icon-logo"></use>
               </svg>
-            </button>
+            </div>
+            <div class="aside__list-box">
+              <ul class="aside__list">
+                <li class="aside__vertical-text">
+                  <a class="aside__link"
+                    aria-label="Youtube  link"
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Youtube
+                  </a>
+                </li>
+                <li class="aside__vertical-text">
+                  <a class="aside__link"
+                    aria-label="instagram link"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Instagram
+                  </a>
+                </li>
+              </ul>
+              <div class="aside__line"></div>
+            </div>
           </div>
-          <div class="line-box">
-            <div class="line-light"></div>
-            <h2 class="hero__secodary-title">A hair salon for men in Kyiv</h2>
+          <div class="hero__overlay">
+            <div class="hero__icons-box">
+              <svg
+                alt="barbershop logo"
+                class="icon-logo"
+                width="69"
+                height="56"
+              >
+                <use href="./img/icons.svg#icon-logo"></use>
+              </svg>
+              <button
+                class="btn-burger"
+                type="button"
+                aria-label="burger menu button"
+              >
+                <svg
+                  alt="burger menu"
+                  class="icon icon-burger"
+                  width="40"
+                  height="40"
+                >
+                  <use href="./img/icons.svg#icon-burger-menu"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="line-box">
+              <div class="line-light"></div>
+              <h2 class="hero__secodary-title">A hair salon for men in Kyiv</h2>
+            </div>
+            <h1 class="hero__primary-title">BarberShop</h1>
+            <p class="hero__text">
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style
+            </p>
           </div>
-          <h1 class="hero__primary-title">BarberShop</h1>
-          <p class="hero__text">
-            We are experts in trendy men’s haircuts. We work quickly, carefully
-            and with style
-          </p>
         </section>
       </header>
       <main>
         <!-- About us -->
         <section class="about container">
-        <div class="about__foto-box">
-          <div class="about__foto">
-            <picture>
-                  <source
-                    srcset="./img/about11600@1x.jpg 1x, ./img/about11600@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />
-                  <source
-                    srcset="./img/about1768@1x.jpg 1x, ./img/about1768@2x.jpg 2x"
-                    media="(min-width: 768px) and (max-width: 1199px)"
-                  />
-                  <source
-                    srcset="./img/about1480@1x.jpg 1x, ./img/about1480@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img loading="lazy"
-                    src="./img/about11600@1x.jpg"
-                    alt="the barber shaves the beard foto"
-                  />
-            </picture>
+          <div class="about__foto-box">
+            <div class="about__foto">
+              <picture>
+                <source
+                  srcset="
+                    ./img/about11600@1x.jpg 1x,
+                    ./img/about11600@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/about1768@1x.jpg 1x, ./img/about1768@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./img/about1480@1x.jpg 1x, ./img/about1480@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/about11600@1x.jpg"
+                  alt="the barber shaves the beard foto"
+                />
+              </picture>
+            </div>
+            <div class="about__foto">
+              <picture>
+                <source
+                  srcset="
+                    ./img/about21600@1x.jpg 1x,
+                    ./img/about21600@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/about2768@1x.jpg 1x, ./img/about2768@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./img/about2480@1x.jpg 1x, ./img/about2480@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/about21600@1x.jpg"
+                  alt="the barber shaves the beard foto"
+                />
+              </picture>
+            </div>
           </div>
-          <div class="about__foto">
-            <picture>
-                  <source
-                    srcset="./img/about21600@1x.jpg 1x, ./img/about21600@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />
-                  <source
-                    srcset="./img/about2768@1x.jpg 1x, ./img/about2768@2x.jpg 2x"
-                    media="(min-width: 768px) and (max-width: 1199px)"
-                  />
-                  <source
-                    srcset="./img/about2480@1x.jpg 1x, ./img/about2480@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img loading="lazy"
-                    src="./img/about21600@1x.jpg"
-                    alt="the barber shaves the beard foto"
-                  />
-            </picture>
-          </div>
-        </div>
-        <div class="about__description-box">
+          <div class="about__description-box">
             <div class="line-box">
-            <div class="line-dark"></div>
-            <h2 class="section-title">About</h2>
+              <div class="line-dark"></div>
+              <h2 class="section-title">About</h2>
+            </div>
+            <h3 class="about__subtitle">Best Barbershop in your city</h3>
+            <p class="about__primary-text">
+              If you want to add more confidence to your image, you should visit
+              us
+            </p>
+            <p class="about__secondary-text">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <a type="button" href="#online-booking" class="btn-light">
+              online-booking
+            </a>
           </div>
-          <h3 class="about__subtitle">Best Barbershop in your city</h3>
-          <p class="about__primary-text">
-            If you want to add more confidence to your image, you should visit
-            us
-          </p>
-          <p class="about__secondary-text">
-            We are a team that never stops at what has been achieved and are
-            thirsty for changes. And when you fall into the hands of our master,
-            you will never be the same again. We are a team that is always "on
-            the same wave" with clients. Therefore, we are always ready to
-            improve everyone who comes to us!
-          </p>
-          <a type="button" href="#online-booking" class="btn-light">
-            online-booking
-          </a>
-        </div> 
-          
         </section>
         <!-- Services and prices -->
         <section class="services container">
@@ -158,8 +209,8 @@
             </li>
           </ul>
           <div class="services__btn">
-              <a href="#online-booking" class="btn-dark"> online-booking </a>
-          </div>        
+            <a href="#online-booking" class="btn-dark"> online-booking </a>
+          </div>
         </section>
         <!-- Advantages -->
         <section class="advantages container">
@@ -214,252 +265,256 @@
         <section class="barbers container">
           <div class="barbers__box">
             <div class="line-box">
-            <div class="line-dark"></div>
-            <h2 class="section-title">For true enjoyers of the atmosphere</h2>
+              <div class="line-dark"></div>
+              <h2 class="section-title">For true enjoyers of the atmosphere</h2>
+            </div>
+            <h3 class="barbers__subtitle">Our barbers</h3>
+            <ul class="barbers__list">
+              <li class="barbers__item">
+                <div class="barbers__foto">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/john1600@1x.jpg 1x,
+                        ./img/john1600@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/john768@1x.jpg 1x, ./img/john768@2x.jpg 2x"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./img/john480@1x.jpg 1x, ./img/john480@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      loading="lazy"
+                      src="./img/john1600@1x.jpg"
+                      alt="foto John Smith"
+                    />
+                  </picture>
+                </div>
+                <div class="barbers__description">
+                  <span class="barbers__name">John Smith</span>
+                  <span class="barbers__qualification">Extreme Barber</span>
+                  <div>
+                    <ul class="social">
+                      <li class="social__item">
+                        <a
+                          aria-label="instagram icon"
+                          href="https://www.instagram.com/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <svg class="icon-social" width="20" height="20">
+                            <use href="./img/icons.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          aria-label="twitter icon"
+                          href="https://twitter.com/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <svg class="icon-social" width="20" height="20">
+                            <use href="./img/icons.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          aria-label="facebook icon"
+                          href="https://www.facebook.com/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <svg class="icon-social" width="20" height="20">
+                            <use href="./img/icons.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          aria-label="linkedin icon"
+                          href="https://www.linkedin.com/in/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <svg class="icon-social" width="20" height="20">
+                            <use href="./img/icons.svg#icon-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="barbers__item">
+                <div class="barbers__foto">
+                  <picture>
+                    <source
+                      srcset="./img/doe1600@1x.jpg 1x, ./img/doe1600@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/doe768@1x.jpg 1x, ./img/doe768@2x.jpg 2x"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./img/doe480@1x.jpg 1x, ./img/doe480@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      loading="lazy"
+                      src="./img/doe1600@1x.jpg"
+                      alt="foto Michele Doe"
+                    />
+                  </picture>
+                </div>
+                <div class="barbers__description">
+                  <span class="barbers__name">Michele Doe</span>
+                  <span class="barbers__qualification">Extreme Barber</span>
+                  <div>
+                    <ul class="social">
+                      <li class="social__item">
+                        <a
+                          aria-label="instagram icon"
+                          href="https://www.instagram.com/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <svg class="icon-social" width="20" height="20">
+                            <use href="./img/icons.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          aria-label="twitter icon"
+                          href="https://twitter.com/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <svg class="icon-social" width="20" height="20">
+                            <use href="./img/icons.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          aria-label="facebook icon"
+                          href="https://www.facebook.com/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <svg class="icon-social" width="20" height="20">
+                            <use href="./img/icons.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          aria-label="linkedin icon"
+                          href="https://www.linkedin.com/in/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <svg class="icon-social" width="20" height="20">
+                            <use href="./img/icons.svg#icon-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="barbers__item">
+                <div class="barbers__foto">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/alan1600@1x.jpg 1x,
+                        ./img/alan1600@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/alan768@1x.jpg 1x, ./img/alan768@2x.jpg 2x"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./img/alan480@1x.jpg 1x, ./img/alan480@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      loading="lazy"
+                      src="./img/alan1600@1x.jpg"
+                      alt="foto Alan Black"
+                    />
+                  </picture>
+                </div>
+                <div class="barbers__description">
+                  <span class="barbers__name">Alan Black</span>
+                  <span class="barbers__qualification">Extreme Barber</span>
+                  <div>
+                    <ul class="social">
+                      <li class="social__item">
+                        <a
+                          aria-label="instagram icon"
+                          href="https://www.instagram.com/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <svg class="icon-social" width="20" height="20">
+                            <use href="./img/icons.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          aria-label="twitter icon"
+                          href="https://twitter.com/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <svg class="icon-social" width="20" height="20">
+                            <use href="./img/icons.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          aria-label="facebook icon"
+                          href="https://www.facebook.com/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <svg class="icon-social" width="20" height="20">
+                            <use href="./img/icons.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          aria-label="linkedin icon"
+                          href="https://www.linkedin.com/in/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <svg class="icon-social" width="20" height="20">
+                            <use href="./img/icons.svg#icon-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <h3 class="barbers__subtitle">Our barbers</h3>
-          <ul class="barbers__list">
-            <li class="barbers__item">
-              <div class="barbers__foto">
-                <picture>
-                  <source
-                    srcset="./img/john1600@1x.jpg 1x, ./img/john1600@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />
-                  <source
-                    srcset="./img/john768@1x.jpg 1x, ./img/john768@2x.jpg 2x"
-                    media="(min-width: 768px) and (max-width: 1199px)"
-                  />
-                  <source
-                    srcset="./img/john480@1x.jpg 1x, ./img/john480@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img
-                    loading="lazy"
-                    src="./img/john1600@1x.jpg"
-                    alt="foto John Smith"
-                  />
-                </picture>
-              </div>
-              <div class="barbers__description">
-                <span class="barbers__name">John Smith</span>
-                <span class="barbers__qualification">Extreme Barber</span>
-                <div>
-                  <ul class="social">
-                    <li class="social__item">
-                      <a
-                        aria-label="instagram icon"
-                        href="https://www.instagram.com/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <svg class="icon-social" width="20" height="20">
-                          <use href="./img/icons.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        aria-label="twitter icon"
-                        href="https://twitter.com/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <svg class="icon-social" width="20" height="20">
-                          <use href="./img/icons.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        aria-label="facebook icon"
-                        href="https://www.facebook.com/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <svg class="icon-social" width="20" height="20">
-                          <use href="./img/icons.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        aria-label="linkedin icon"
-                        href="https://www.linkedin.com/in/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <svg class="icon-social" width="20" height="20">
-                          <use href="./img/icons.svg#icon-linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="barbers__item">
-              <div class="barbers__foto">
-                <picture>
-                  <source
-                    srcset="./img/doe1600@1x.jpg 1x, ./img/doe1600@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />
-                  <source
-                    srcset="./img/doe768@1x.jpg 1x, ./img/doe768@2x.jpg 2x"
-                    media="(min-width: 768px) and (max-width: 1199px)"
-                  />
-                  <source
-                    srcset="./img/doe480@1x.jpg 1x, ./img/doe480@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img
-                    loading="lazy"
-                    src="./img/doe1600@1x.jpg"
-                    alt="foto Michele Doe"
-                  />
-                </picture>
-              </div>
-              <div class="barbers__description">
-                <span class="barbers__name">Michele Doe</span>
-                <span class="barbers__qualification">Extreme Barber</span>
-                <div>
-                  <ul class="social">
-                    <li class="social__item">
-                      <a
-                        aria-label="instagram icon"
-                        href="https://www.instagram.com/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <svg class="icon-social" width="20" height="20">
-                          <use href="./img/icons.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        aria-label="twitter icon"
-                        href="https://twitter.com/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <svg class="icon-social" width="20" height="20">
-                          <use href="./img/icons.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        aria-label="facebook icon"
-                        href="https://www.facebook.com/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <svg class="icon-social" width="20" height="20">
-                          <use href="./img/icons.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        aria-label="linkedin icon"
-                        href="https://www.linkedin.com/in/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <svg class="icon-social" width="20" height="20">
-                          <use href="./img/icons.svg#icon-linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="barbers__item">
-              <div class="barbers__foto">
-                <picture>
-                  <source
-                    srcset="./img/alan1600@1x.jpg 1x, ./img/alan1600@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />
-                  <source
-                    srcset="./img/alan768@1x.jpg 1x, ./img/alan768@2x.jpg 2x"
-                    media="(min-width: 768px) and (max-width: 1199px)"
-                  />
-                  <source
-                    srcset="./img/alan480@1x.jpg 1x, ./img/alan480@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img
-                    loading="lazy"
-                    src="./img/alan1600@1x.jpg"
-                    alt="foto Alan Black"
-                  />
-                </picture>
-              </div>
-              <div class="barbers__description">
-                <span class="barbers__name">Alan Black</span>
-                <span class="barbers__qualification">Extreme Barber</span>
-                <div>
-                  <ul class="social">
-                    <li class="social__item">
-                      <a
-                        aria-label="instagram icon"
-                        href="https://www.instagram.com/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <svg class="icon-social" width="20" height="20">
-                          <use href="./img/icons.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        aria-label="twitter icon"
-                        href="https://twitter.com/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <svg class="icon-social" width="20" height="20">
-                          <use href="./img/icons.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        aria-label="facebook icon"
-                        href="https://www.facebook.com/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <svg class="icon-social" width="20" height="20">
-                          <use href="./img/icons.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a
-                        aria-label="linkedin icon"
-                        href="https://www.linkedin.com/in/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <svg class="icon-social" width="20" height="20">
-                          <use href="./img/icons.svg#icon-linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-
-          </div>          
         </section>
         <!-- Portfolio section -->
         <section class="portfolio container">
@@ -471,89 +526,126 @@
             <!-- barber cuts hair foto -->
             <li class="portfolio__item">
               <picture>
-                  <source
-                    srcset="./img/portfolio/portfolio11600@1x.jpg 1x, ./img/portfolio/portfolio11600@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />
-                  <source
-                    srcset="./img/portfolio/portfolio1768@1x.jpg 1x, ./img/portfolio/portfolio1768@2x.jpg 2x"
-                    media="(min-width: 768px) and (max-width: 1199px)"
-                  />
-                  <source
-                    srcset="./img/portfolio/portfolio1480@1x.jpg 1x, ./img/portfolio/portfolio1480@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img loading="lazy"
-                    src="./img/portfolio/portfolio11600@1x.jpg"
-                    alt="barber cuts hair"
-                  />
-                </picture>
+                <source
+                  srcset="
+                    ./img/portfolio/portfolio11600@1x.jpg 1x,
+                    ./img/portfolio/portfolio11600@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/portfolio/portfolio1768@1x.jpg 1x,
+                    ./img/portfolio/portfolio1768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/portfolio/portfolio1480@1x.jpg 1x,
+                    ./img/portfolio/portfolio1480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/portfolio/portfolio11600@1x.jpg"
+                  alt="barber cuts hair"
+                />
+              </picture>
             </li>
             <!-- the barber shaves the beard foto -->
             <li class="portfolio__item">
               <picture>
-                  <source
-                    srcset="./img/portfolio/portfolio21600@1x.jpg 1x, ./img/portfolio/portfolio21600@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />
-                  <source
-                    srcset="./img/portfolio/portfolio2768@1x.jpg 1x, ./img/portfolio/portfolio2768@2x.jpg 2x"
-                    media="(min-width: 768px) and (max-width: 1199px)"
-                  />
-                  <source
-                    srcset="./img/portfolio/portfolio2480@1x.jpg 1x, ./img/portfolio/portfolio2480@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img
-                    loading="lazy"
-                    src="./img/portfolio/portfolio21600@1x.jpg"
-                    alt="the barber shaves the beard foto"
-                  />
-                </picture>
+                <source
+                  srcset="
+                    ./img/portfolio/portfolio21600@1x.jpg 1x,
+                    ./img/portfolio/portfolio21600@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/portfolio/portfolio2768@1x.jpg 1x,
+                    ./img/portfolio/portfolio2768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/portfolio/portfolio2480@1x.jpg 1x,
+                    ./img/portfolio/portfolio2480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/portfolio/portfolio21600@1x.jpg"
+                  alt="the barber shaves the beard foto"
+                />
+              </picture>
             </li>
             <!-- a photo with a towel -->
             <li class="portfolio__item">
               <picture>
-                  <source
-                    srcset="./img/portfolio/portfolio31600@1x.jpg 1x, ./img/portfolio/portfolio31600@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />
-                  <source
-                    srcset="./img/portfolio/portfolio3768@1x.jpg 1x, ./img/portfolio/portfolio3768@2x.jpg 2x"
-                    media="(min-width: 768px) and (max-width: 1199px)"
-                  />
-                  <source
-                    srcset="./img/portfolio/portfolio3480@1x.jpg 1x, ./img/portfolio/portfolio3480@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img
-                    loading="lazy"
-                    src="./img/portfolio/portfolio31600@1x.jpg"
-                    alt="the barber applies a warm towel to the client's face"
-                  />
-                </picture>
+                <source
+                  srcset="
+                    ./img/portfolio/portfolio31600@1x.jpg 1x,
+                    ./img/portfolio/portfolio31600@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/portfolio/portfolio3768@1x.jpg 1x,
+                    ./img/portfolio/portfolio3768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/portfolio/portfolio3480@1x.jpg 1x,
+                    ./img/portfolio/portfolio3480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/portfolio/portfolio31600@1x.jpg"
+                  alt="the barber applies a warm towel to the client's face"
+                />
+              </picture>
             </li>
             <!-- the back of the client's head -->
             <li class="portfolio__item">
               <picture>
-                  <source
-                    srcset="./img/portfolio/portfolio41600@1x.jpg 1x, ./img/portfolio/portfolio41600@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />
-                  <source
-                    srcset="./img/portfolio/portfolio4768@1x.jpg 1x, ./img/portfolio/portfolio4768@2x.jpg 2x"
-                    media="(min-width: 768px) and (max-width: 1199px)"
-                  />
-                  <source
-                    srcset="./img/portfolio/portfolio4480@1x.jpg 1x, ./img/portfolio/portfolio4480@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img
-                    loading="lazy"
-                    src="./img/portfolio/portfolio41600@1x.jpg"
-                    alt="the barber is shaving the back of the client's head."
-                  />
-                </picture>
+                <source
+                  srcset="
+                    ./img/portfolio/portfolio41600@1x.jpg 1x,
+                    ./img/portfolio/portfolio41600@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/portfolio/portfolio4768@1x.jpg 1x,
+                    ./img/portfolio/portfolio4768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/portfolio/portfolio4480@1x.jpg 1x,
+                    ./img/portfolio/portfolio4480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/portfolio/portfolio41600@1x.jpg"
+                  alt="the barber is shaving the back of the client's head."
+                />
+              </picture>
             </li>
           </ul>
         </section>
@@ -562,5 +654,3 @@
     </div>
   </body>
 </html>
-
-
