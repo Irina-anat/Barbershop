@@ -6,7 +6,7 @@
     @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-left: auto;
-    width: 480px;
+   // width: 480px;
     max-width: 100%;
     min-height: 400px;
     padding: 40px 39px 209px 31px;
@@ -79,6 +79,12 @@
     @include for-tablet-landscape{
         display: flex;
         padding: 0 39px;
+    }
+
+    &__primary-content{
+    @include for-tablet-landscape{
+        margin-left: 120px;
+    }
     }
 }
 

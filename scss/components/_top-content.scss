@@ -1,0 +1,38 @@
+.top-content{
+@media screen and (max-width: 767px) {
+    display: none;
+}
+}
+
+.top-content{
+    margin-bottom: 156px;
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 32px;
+
+    }
+
+    &__tel{
+        text-align: right;
+
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.333;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        & a {
+                color: var(--white-text-color);
+                transition: color 250ms var(--timing-function);
+        
+                &:hover,
+                &:focus {
+                    color: var(--accent-color);
+                }
+        }
+    }
+
+}
+

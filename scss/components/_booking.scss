@@ -1,0 +1,40 @@
+.booking{
+    background-color: var(--footer-bg-color);
+    &__form {
+            width: 100%;
+        }
+
+    &__btn-box{
+        text-align: center;
+        margin-top: 44px;
+    }
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    background-color: transparent;
+    transition: border-bottom-color 250ms var(--timing-function), transform 250ms var(--timing-function);
+}
+
+input:focus {
+    outline: none;
+    border-bottom-color: rgb(255, 255, 255);
+}
+ input + label {
+    transform: translateY(-24px);
+    transition: transform 250ms var(--timing-function);
+ }
+
+ input:focus+label,
+ input:valid+label{
+transform: translateY(-44px);
+ }

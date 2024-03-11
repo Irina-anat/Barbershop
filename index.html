@@ -30,7 +30,8 @@
             <div class="aside__list-box">
               <ul class="aside__list">
                 <li class="aside__vertical-text">
-                  <a class="aside__link"
+                  <a
+                    class="aside__link"
                     aria-label="Youtube  link"
                     href="https://www.youtube.com/"
                     target="_blank"
@@ -40,7 +41,8 @@
                   </a>
                 </li>
                 <li class="aside__vertical-text">
-                  <a class="aside__link"
+                  <a
+                    class="aside__link"
                     aria-label="instagram link"
                     href="https://www.instagram.com/"
                     target="_blank"
@@ -54,6 +56,26 @@
             </div>
           </div>
           <div class="hero__overlay">
+            <div class="top-content">
+              <div class="top-content__box">
+                <nav class="menu">
+                  <ul class="menu__list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services and prices</a></li>
+                    <li><a href="#barbers">Barbers</a></li>
+                    <li><a href="#">Contacts</a></li>
+                  </ul>
+                </nav>
+                <div class="top-content__btn">
+                  <a href="#online-booking" class="btn-dark">
+                    online-booking
+                  </a>
+                </div>
+              </div>
+              <div class="top-content__tel">
+                <a href="tel:+380441111111">+38 044 111 11 11</a>
+              </div>
+            </div>
             <div class="hero__icons-box">
               <svg
                 alt="barbershop logo"
@@ -78,21 +100,25 @@
                 </svg>
               </button>
             </div>
-            <div class="line-box">
-              <div class="line-light"></div>
-              <h2 class="hero__secodary-title">A hair salon for men in Kyiv</h2>
+            <div class="hero__primary-content">
+              <div class="line-box">
+                <div class="line-light"></div>
+                <h2 class="hero__secodary-title">
+                  A hair salon for men in Kyiv
+                </h2>
+              </div>
+              <h1 class="hero__primary-title">BarberShop</h1>
+              <p class="hero__text">
+                We are experts in trendy men’s haircuts. We work quickly,
+                carefully and with style
+              </p>
             </div>
-            <h1 class="hero__primary-title">BarberShop</h1>
-            <p class="hero__text">
-              We are experts in trendy men’s haircuts. We work quickly,
-              carefully and with style
-            </p>
           </div>
         </section>
       </header>
       <main>
         <!-- About us -->
-        <section class="about container">
+        <section id="about" class="about container">
           <div class="about__foto-box">
             <div class="about__foto">
               <picture>
@@ -106,10 +132,6 @@
                 <source
                   srcset="./img/about1768@1x.jpg 1x, ./img/about1768@2x.jpg 2x"
                   media="(min-width: 768px) and (max-width: 1199px)"
-                />
-                <source
-                  srcset="./img/about1480@1x.jpg 1x, ./img/about1480@2x.jpg 2x"
-                  media="(max-width: 767px)"
                 />
                 <img
                   loading="lazy"
@@ -130,10 +152,6 @@
                 <source
                   srcset="./img/about2768@1x.jpg 1x, ./img/about2768@2x.jpg 2x"
                   media="(min-width: 768px) and (max-width: 1199px)"
-                />
-                <source
-                  srcset="./img/about2480@1x.jpg 1x, ./img/about2480@2x.jpg 2x"
-                  media="(max-width: 767px)"
                 />
                 <img
                   loading="lazy"
@@ -166,7 +184,7 @@
           </div>
         </section>
         <!-- Services and prices -->
-        <section class="services container">
+        <section id="services" class="services container">
           <div class="line-box">
             <div class="line-light"></div>
             <h2 class="section-title services-title">
@@ -262,7 +280,7 @@
           </div>
         </section>
         <!-- Barbers section -->
-        <section class="barbers container">
+        <section id="barbers" class="barbers container">
           <div class="barbers__box">
             <div class="line-box">
               <div class="line-dark"></div>
@@ -650,7 +668,29 @@
           </ul>
         </section>
       </main>
-      <footer>Footer</footer>
+      <footer>
+        <!-- Online-booking section -->
+        <section class="booking">
+          <div class="container">
+            <h2 class="footer-title">Online-booking</h2>
+            <div class="booking__box">
+              <form name="online-booking form" action="submit" class="booking__form js-form"
+              autocomplete="off" >
+                <input id="user-name" type="text" name="name" required />
+                <label for="user-name">Name*</label>
+                <input id="user-phone" type="tel" name="phone" required />
+                <label for="user-phone">Phone*</label>
+                <input id="user-message" type="text" name="message"/>
+                <label for="user-message" type="text">Message</label>
+                <div class="booking__btn-box">
+                  <button type="submit" class="btn-dark btn-footer">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </footer>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

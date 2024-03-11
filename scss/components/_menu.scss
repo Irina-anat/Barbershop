@@ -1,0 +1,21 @@
+.menu{
+   &__list{
+    display: flex;
+    gap: 16px;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.333;
+    letter-spacing: 0.1em;
+    
+    & a{
+    color: var(--white-text-color);
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+    }
+   }
+}
