@@ -8,33 +8,69 @@
         text-align: center;
         margin-top: 44px;
     }
+
+        label {
+            display: block;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 1.364;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+    
+        input+label {
+            color: rgba(157, 164, 189, 0.4);
+            transform: translateY(-24px);
+            transition: transform 250ms var(--timing-function), color 250ms var(--timing-function);
+        }
+    
+        input:focus+label,
+        input:valid+label {
+            color: var(--subtitle-color);
+            transform: translateY(-44px);
+        }
+    
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            color: var(--subtitle-color);
+            font-size: 11px;
+            line-height: 1.364;
+            letter-spacing: 0.1em;
+    
+            border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+            background-color: transparent;
+            transition: border-bottom-color 250ms var(--timing-function), transform 250ms var(--timing-function);
+        }
+    
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-bottom-color: rgb(255, 255, 255);
+        }
+    
+        input,
+        textarea {
+            resize: none;
+        }
+       
+        textarea+label {
+            color: rgba(157, 164, 189, 0.4);
+            transform: translateY(-74px);
+            transition: transform 250ms var(--timing-function), color 250ms var(--timing-function);
+        }
+        
+        textarea:focus+label,
+        textarea:valid+label {
+            color: var(--subtitle-color);
+            transform: translateY(-94px);
+        }
 }
 
 
-label {
-    display: block;
-    margin-bottom: 8px;
-}
 
-input {
-    width: 100%;
-    padding: 8px;
-    border: none;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-    background-color: transparent;
-    transition: border-bottom-color 250ms var(--timing-function), transform 250ms var(--timing-function);
-}
 
-input:focus {
-    outline: none;
-    border-bottom-color: rgb(255, 255, 255);
-}
- input + label {
-    transform: translateY(-24px);
-    transition: transform 250ms var(--timing-function);
- }
 
- input:focus+label,
- input:valid+label{
-transform: translateY(-44px);
- }
+ 

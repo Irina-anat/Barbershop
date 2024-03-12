@@ -1,0 +1,89 @@
+.contacts{
+    width: 100%;
+    min-height: 496px;
+    background-image: linear-gradient(180.00deg, rgb(23, 26, 26), rgba(23, 26, 36, 0.6) 100%), url(../img/footer/footer480@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+    @include retina {
+    background-image: linear-gradient(180.00deg, rgb(23, 26, 26), rgba(23, 26, 36, 0.6) 100%), url(../img/footer/footer480@2x.jpg);
+    }
+        
+    @include for-tablet-landscape{
+    background-image: linear-gradient(180.00deg, rgb(25, 38, 38), rgba(23, 26, 36, 0.6) 100%), url(../img/footer/footer768@1x.jpg);
+    width: 100%;
+    min-height: 449px;
+
+    @include retina {
+    background-image: linear-gradient(180.00deg, rgb(25, 38, 38), rgba(23, 26, 36, 0.6) 100%), url(../img/footer/footer768@2x.jpg);
+        }
+    }
+
+    @include for-desktop {
+    background-image: linear-gradient(180.00deg, rgb(25, 38, 38), rgba(23, 26, 36, 0.6) 100%), url(../img/footer/footer1600@1x.jpg);
+    width: 100%;
+    min-height: 634px;
+            
+    @include retina {
+    background-image: linear-gradient(180.00deg, rgb(25, 38, 38), rgba(23, 26, 36, 0.6) 100%), url(../img/footer/footer1600@2x.jpg);                
+        }
+    }
+}
+
+.contacts{
+&__link{
+   display: flex;
+   align-items: center;
+   color: inherit;
+   transition: color 250ms var(--timing-function);
+
+    &:hover,
+        &:focus {
+            color: var(--accent-color);
+            stroke: var(--accent-color);
+        }
+}
+
+&__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 44px;
+}
+
+&__building, 
+&__electronic{
+    color: var(--footer-contacts-color);
+    font-size: 18px;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+
+}
+
+&__building{
+font-weight: 700;
+}
+
+&__subtitle{
+    color: var(--subtitle-color);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.364;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+&__schedule{
+    color: var(--footer-contacts-color);
+    font-size: 18px;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+}
+

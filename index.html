@@ -63,7 +63,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services and prices</a></li>
                     <li><a href="#barbers">Barbers</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
                   </ul>
                 </nav>
                 <div class="top-content__btn">
@@ -78,6 +78,7 @@
             </div>
             <div class="hero__icons-box">
               <svg
+                title="barbershop logo"
                 alt="barbershop logo"
                 class="icon-logo"
                 width="69"
@@ -668,25 +669,107 @@
           </ul>
         </section>
       </main>
+      <!-- Footer -->
       <footer>
         <!-- Online-booking section -->
-        <section class="booking">
+        <section id="online-booking" class="booking">
           <div class="container">
             <h2 class="footer-title">Online-booking</h2>
             <div class="booking__box">
-              <form name="online-booking form" action="submit" class="booking__form js-form"
-              autocomplete="off" >
+              <form
+                name="online-booking form"
+                action="submit"
+                class="booking__form js-form"
+                autocomplete="off"
+              >
                 <input id="user-name" type="text" name="name" required />
                 <label for="user-name">Name*</label>
                 <input id="user-phone" type="tel" name="phone" required />
                 <label for="user-phone">Phone*</label>
-                <input id="user-message" type="text" name="message"/>
-                <label for="user-message" type="text">Message</label>
+                <textarea
+                  name="message"
+                  id="user-message"
+                  rows="4"
+                  required
+                ></textarea>
+                <label for="user-message" type="text">Message*</label>
                 <div class="booking__btn-box">
-                  <button type="submit" class="btn-dark btn-footer">Send</button>
+                  <button type="submit" class="btn-dark btn-footer">
+                    Send
+                  </button>
                 </div>
               </form>
             </div>
+          </div>
+        </section>
+        <!-- Contacts section-->
+        <section id="contacts" class="contacts">
+          <div class="container">
+            <h2 class="footer-title">Contacts</h2>
+            <address>
+              <ul class="contacts__list">
+                <li class="contacts__building">
+                  <a
+                    class="contacts__link"
+                    aria-label="address link"
+                    href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0+%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0,+67%2F7,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4292617,30.5164254,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4cf1da4f1134b:0xd499687226671317!8m2!3d50.4292617!4d30.5164254!16s%2Fg%2F11c2gq6trb?entry=ttu"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <svg
+                      alt="map icon"
+                      class="icon-contacts"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./img/icons.svg#icon-map-pin"></use>
+                    </svg>
+                    st. V. Vasylkivska, 67/7 Kiev, 02000
+                  </a>
+                </li>
+                <li class="contacts__electronic">
+                  <a
+                    class="contacts__link"
+                    aria-label="phone number"
+                    href="tel:+380441111111"
+                  >
+                    <svg
+                      alt="icon-phone"
+                      class="icon-contacts"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./img/icons.svg#icon-phone"></use>
+                    </svg>
+                    +38 044 111 11 11
+                  </a>
+                </li>
+                <li class="contacts__electronic">
+                  <a
+                    class="contacts__link"
+                    aria-label="phone number"
+                    href="mailto:barbershop@email.com"
+                  >
+                    <svg
+                      alt="icon-email"
+                      class="icon-contacts"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./img/icons.svg#icon-mail"></use>
+                    </svg>
+                    barbershop@email.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <div class="line-box">
+              <div class="line-light"></div>
+              <h2 class="contacts__subtitle">
+                In Latin, "barba" means "beard"
+              </h2>
+            </div>
+            <p class="contacts__schedule">Every day from 9:00 to 22:00</p>
           </div>
         </section>
       </footer>

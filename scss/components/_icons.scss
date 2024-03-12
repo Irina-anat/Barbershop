@@ -14,6 +14,7 @@
 
 .icon-logo{
     fill: var(--icons-color);
+    cursor: pointer;
 }
 
 .aside-logo{
@@ -31,6 +32,18 @@
     &:hover,
     &:focus {
         fill: var(--accent-color);
+    }
+}
+
+.icon-contacts {
+    stroke: currentColor;
+    fill: transparent;
+    margin-right: 20px;
+    transition: stroke 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        stroke: var(--accent-color);
     }
 }
 
