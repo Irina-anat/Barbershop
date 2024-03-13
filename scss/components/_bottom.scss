@@ -1,0 +1,40 @@
+.bottom{
+padding: 44px 31px;
+margin-right: auto;
+margin-left: auto;
+
+    & .line-dark{
+        right: 211px;
+    }
+
+    &__list{
+        display: flex;
+        gap: 40px;
+        justify-content: right;
+        color: var(--dark-text-color);
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 1.364;
+        letter-spacing: 0.2em;
+        margin-bottom: 20px;
+
+        & a {
+                color: var(--dark-text-color);
+                transition: color 250ms var(--timing-function);
+        
+                &:hover,
+                &:focus {
+                    color: var(--accent-color);
+                }
+            }
+    }
+
+    &__copyright{
+        color: var(--footer-contacts-color);
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 1.364;
+        letter-spacing: 0.2em;
+
+    }
+}
