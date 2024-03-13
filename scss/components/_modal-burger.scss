@@ -7,15 +7,15 @@
     overflow-y: scroll;
     background-color: rgba(25, 28, 38, 0.2);
     opacity: 1;
-    transform: translateX(0);
+    visibility: visible;
     transition: opacity 250ms var(--timing-function),
-    transform 250ms var(--timing-function);
-        
-    &.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(100%);
-    }
+                visibility 250ms var(--timing-function);
+    
+        &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        }
 }
 
 .modal {

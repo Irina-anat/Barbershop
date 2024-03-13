@@ -960,18 +960,14 @@
   overflow-y: scroll;
   background-color: rgba(25, 28, 38, 0.2);
   opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: opacity 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
-  transition: opacity 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
-  transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
-  transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  visibility: visible;
+  -webkit-transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 .backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
 }
 
 .modal {
