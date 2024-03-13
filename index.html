@@ -87,6 +87,7 @@
                 <use href="./img/icons.svg#icon-logo"></use>
               </svg>
               <button
+                data-modal-open
                 class="btn-burger"
                 type="button"
                 aria-label="burger menu button"
@@ -179,9 +180,7 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <a type="button" href="#online-booking" class="btn-light">
-              online-booking
-            </a>
+            <a href="#online-booking" class="btn-light"> online-booking </a>
           </div>
         </section>
         <!-- Services and prices -->
@@ -765,15 +764,69 @@
             </address>
             <div class="line-box">
               <div class="line-light"></div>
-              <h2 class="contacts__subtitle">
-                In Latin, "barba" means "beard"
-              </h2>
+              <h2 class="contacts__subtitle">Working hours</h2>
             </div>
             <p class="contacts__schedule">Every day from 9:00 to 22:00</p>
           </div>
         </section>
       </footer>
     </div>
-    <script src="./script.js"></script>
+    <!-- Burger menu  -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__close" type="button" data-modal-close>
+          <svg alt="icon close" width="24" height="24">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="modal__menu">
+          <ul class="modal__list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services and prices</a></li>
+            <li><a href="#barbers">Barbers</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <a
+          class="modal__tel"
+          aria-label="phone number"
+          href="tel:+380441111111"
+        >
+          +38 044 111 11 11
+        </a>
+        <a href="#online-booking" class="btn-light modal__link-btn">
+          online-booking
+        </a>
+        <div>
+          <div class="line-box">
+            <div class="line-dark"></div>
+            <ul class="modal__links">
+              <li>
+                <a
+                  aria-label="Youtube  link"
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Youtube
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label="instagram link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal-close.js"></script>
+    <script src="./js/form-submit.js"></script>
   </body>
 </html>

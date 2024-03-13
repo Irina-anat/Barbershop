@@ -1,10 +1,11 @@
 .contacts{
     width: 100%;
     min-height: 496px;
-    background-image: linear-gradient(180.00deg, rgb(23, 26, 26), rgba(23, 26, 36, 0.6) 100%), url(../img/footer/footer480@1x.jpg);
+    background-image:linear-gradient(180.00deg, rgb(23, 26, 26), rgba(23, 26, 36, 0.6) 100%),  url(../img/footer/footer480@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    filter: contrast(150%) brightness(120%);
     
 
     @include retina {
@@ -31,6 +32,7 @@
         }
     }
 }
+
 
 .contacts{
 &__link{

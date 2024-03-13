@@ -1,7 +1,11 @@
 .btn-burger{
     padding: 0;
     border: none;
-    background-color: rgba(0, 0, 0, 0) ;
+    background-color: rgba(0, 0, 0, 0);
+    &:hover,
+    &:focus {
+    border: none;
+        }
 }
 
 .btn-light,
@@ -15,7 +19,6 @@
     padding: 12px 20px;
     border: 1px solid var(--accent-color);
     cursor: pointer;
-
 }
 
 .btn-light{
