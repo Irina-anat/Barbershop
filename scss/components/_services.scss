@@ -17,14 +17,21 @@
     margin-bottom: 44px;
     }
 
-    &__box{
+    &__container{
+    margin-bottom: 79px;
     background: linear-gradient(180.00deg, rgb(23, 26, 36), rgba(23, 26, 36, 0.2) 100%);
-    max-width: 418px;
+   // max-width: 418px;
+    max-width: 100%;
     padding-top: 30px;
     padding-right: 20px;
     padding-bottom: 30px;
     padding-left: 40px;
+
+   @include for-tablet-landscape{
     margin-bottom: 44px;
+    max-width: 690px;
+    padding: 32px 27px 32px 40px;
+   }
     }
 
     &__item{
@@ -57,11 +64,6 @@
         font-size: 42px;
         line-height: 1.1667;
         text-align: left;
-        }
-
-        &__box{
-            max-width: 690px;
-            padding: 32px 27px 32px 40px;
         }
 
         &__item{

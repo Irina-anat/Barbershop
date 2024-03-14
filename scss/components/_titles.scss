@@ -24,5 +24,9 @@
     letter-spacing: 0.05em;
     text-align: center;
     margin-bottom: 44px;
+
+    @include for-tablet-landscape{
+        margin-bottom: 40px;
+    }
 }
 

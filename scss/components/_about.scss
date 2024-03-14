@@ -1,7 +1,14 @@
 .about{
-    padding-left: 35px;
-    padding-right: 35px;
 
+    @media screen and (max-width: 767px){
+    padding-left: 35px;
+    padding-right: 27px;
+    }
+
+    @media screen and (min-width: 1400px){
+    min-width: 1170px;
+    }
+    
     @include for-tablet-landscape{
         display: flex;
     }
@@ -19,6 +26,9 @@
         line-height: 1.6667;
     }
 
+    @include for-desktop{
+        max-width: 470px;
+    }
     }
 
     &__secondary-text{
@@ -33,6 +43,11 @@
         @include for-tablet-landscape{
             margin-bottom: 77px;
         }
+
+        @include for-desktop{
+        max-width: 470px;
+        margin-bottom: 42px;
+        }
     }
 
         &__subtitle {
@@ -45,22 +60,36 @@
             text-align: left;
             margin-bottom: 20px;
             max-width: 306px;
+
+            @include for-desktop{
+            font-size: 42px;
+            line-height: 1.1667;
+            max-width: 470px;
+            }
         }
 
         &__foto-box{
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 768px) {
               display: none;
             } 
             
         @include for-tablet-landscape{
             display: flex;
             flex-direction: column;
+            margin-right: 30px;
             gap: 30px;
+        }
+
+        @media screen and (min-width: 1400px){
+            flex-direction: row;
         }
         } 
         
         &__foto{
-        margin-right: 30px;
         width: 330px;
+
+        @media screen and (min-width: 1400px){
+            width: 270px;
+        }
         }
 }

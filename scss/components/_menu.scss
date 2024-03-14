@@ -7,6 +7,10 @@
     font-weight: 600;
     line-height: 1.333;
     letter-spacing: 0.1em;
+
+    @include for-desktop{
+        gap: 30px;
+    }
     
     & a{
     color: var(--white-text-color);

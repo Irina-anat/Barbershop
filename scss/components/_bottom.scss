@@ -18,6 +18,10 @@ margin-left: auto;
         letter-spacing: 0.2em;
         margin-bottom: 20px;
 
+        @include for-tablet-landscape{
+            margin-bottom: 0;
+        }
+
         & a {
                 color: var(--dark-text-color);
                 transition: color 250ms var(--timing-function);
@@ -29,6 +33,11 @@ margin-left: auto;
             }
     }
 
+    @include for-tablet-landscape{
+        padding: 56px 39px;
+        position: relative;
+    }
+
     &__copyright{
         color: var(--footer-contacts-color);
         font-size: 11px;
@@ -36,5 +45,10 @@ margin-left: auto;
         line-height: 1.364;
         letter-spacing: 0.2em;
 
+        @include for-tablet-landscape{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 }

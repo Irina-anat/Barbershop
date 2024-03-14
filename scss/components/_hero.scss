@@ -6,7 +6,7 @@
     @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-left: auto;
-   // width: 480px;
+    width: 480px;
     max-width: 100%;
     min-height: 400px;
     padding: 40px 39px 209px 31px;
@@ -32,6 +32,15 @@
     @include retina {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/overlay768@2x.jpg);
     }
+    }
+
+    @include for-desktop{
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/overlay1600@1x.jpg);
+    width: 1225px;
+   // max-width: 100%;
+    min-height: 680px;
+    padding: 40px 20px 40px 100px;
+
     }
     }
  
@@ -66,6 +75,11 @@
     line-height: 1.167;
     letter-spacing: 0.05em;
     margin-bottom: 20px;
+
+    @include for-desktop{
+    font-size: 72px;
+    line-height: 1.181;
+    }
     }
 
     &__text{
@@ -74,6 +88,12 @@
         line-height: 1.625;
         letter-spacing: 0.02em;
         max-width: 336px;
+
+        @include for-desktop{
+       font-size: 18px;
+       line-height: 1.667;
+       max-width: 357px;
+        }
     }
     
     @include for-tablet-landscape{
@@ -85,7 +105,15 @@
     @include for-tablet-landscape{
         margin-left: 120px;
     }
+
+    @include for-desktop{
+        margin-left: 0;
     }
+    }
+
+   @include for-desktop{
+    padding: 0 265px;
+   }
 }
 
 
