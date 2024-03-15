@@ -1,4 +1,18 @@
 .booking{
+    padding: 84px 31px;
+
+
+    @include for-tablet-landscape {
+        padding: 100px 39px;
+
+    }
+
+      @include for-desktop{
+        padding-left: 100px;
+        padding-top: 130px;
+    }
+
+
     background-color: var(--footer-bg-color);
     &__form {
             width: 100%;

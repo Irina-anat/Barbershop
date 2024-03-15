@@ -1,4 +1,10 @@
 .advantages{
+    @include for-desktop{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 130px;
+    }
+
     &__subtitle{
         color: var(--dark-text-color);
         font-family: Raleway;

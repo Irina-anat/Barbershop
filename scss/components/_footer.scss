@@ -1,0 +1,16 @@
+.footer{
+    margin-right: auto;
+    margin-left: auto;
+
+    @include for-desktop{
+      &__container{
+        display: flex;
+        width: 1600px;
+    }
+    &__item{
+         margin-right: -1px;
+         width: 50%;  
+    }
+    }
+  
+}
