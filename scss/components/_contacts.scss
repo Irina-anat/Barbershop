@@ -115,11 +115,10 @@ font-weight: 700;
     }
 }
 
-@include for-desktop{
+@media screen and (min-width: 1200px){
     &__box{
         flex-direction: column;
     }
 }
-
 }
 
