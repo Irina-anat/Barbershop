@@ -1,38 +1,35 @@
 (() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
-    modalLinks: document.querySelectorAll(".modal__list a"), 
-    onlineBookingLink: document.querySelector(".modal__link-btn"), 
-  };
+    const refs = {
+        openModalBtn: document.querySelector("[data-modal-open]"),
+        closeModalBtn: document.querySelector("[data-modal-close]"),
+        backdrop: document.querySelector("[data-modal]"),
+        modal: document.querySelector("[data-modal] .modal"),
+        modalLinks: document.querySelector("[data-modal-list]"), 
+        onlineBookingLink: document.querySelector("[data-modal-btn]"), 
+    };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-  window.addEventListener("keydown", onEscKeyPress);
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+    refs.backdrop.addEventListener("click", backdropClickHandler);
+    refs.modalLinks.addEventListener("click", modalLinkClickHandler);
+    refs.onlineBookingLink.addEventListener("click", toggleModal);
 
-  refs.modalLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      toggleModal();
-    });
-  });
-
-  refs.onlineBookingLink.addEventListener("click", () => {
-    toggleModal();
-  });
-
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-
-  function onEscKeyPress(event) {
-    if (event.code === "Escape") {
-      toggleModal();
+    function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
     }
-  }
+
+    function backdropClickHandler(event) {
+        if (event.target === refs.backdrop) {
+            toggleModal();
+        }
+    }
+
+    function modalLinkClickHandler(event) {
+        if (event.target.tagName === "A") {
+            toggleModal();
+        }
+    }
 })();
-
-
 
 
 
