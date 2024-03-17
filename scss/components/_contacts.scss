@@ -114,12 +114,19 @@ font-weight: 700;
         gap: 71px;
         justify-content: space-around;
     }
+    
+          @media screen and (min-width: 1200px) and (max-width: 1599px) {
+          & .footer-title  {
+          margin-bottom: 114px;
+          }  
+          }
+
 }
 
-@media screen and (min-width: 1200px){
-    &__box{
-        flex-direction: column;
-    }
-}
-}
+// @media screen and (min-width: 1200px){
+//     &__box{
+//         flex-direction: column;
+//     }
+// }
+ }
 
