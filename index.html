@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Barbershop</title>
   </head>
   <body>
@@ -111,8 +112,8 @@
                   A hair salon for men in Kyiv
                 </h2>
               </div>
-              <h1 class="hero__primary-title">BarberShop</h1>
-              <p class="hero__text">
+              <h1 data-aos="fade-right"  class="hero__primary-title">BarberShop</h1>
+              <p data-aos="fade-right"  class="hero__text">
                 We are experts in trendy men’s haircuts. We work quickly,
                 carefully and with style
               </p>
@@ -170,12 +171,12 @@
               <div class="line-dark"></div>
               <h2 class="section-title">About</h2>
             </div>
-            <h3 class="about__subtitle">Best Barbershop in your city</h3>
-            <p class="about__primary-text">
+            <h3 data-aos="fade-left"class="about__subtitle">Best Barbershop in your city</h3>
+            <p data-aos="fade-left" data-aos-delay="300" class="about__primary-text">
               If you want to add more confidence to your image, you should visit
               us
             </p>
-            <p class="about__secondary-text">
+            <p data-aos="fade-left"  class="about__secondary-text">
               We are a team that never stops at what has been achieved and are
               thirsty for changes. And when you fall into the hands of our
               master, you will never be the same again. We are a team that is
@@ -194,8 +195,8 @@
                 Spend your time with the best masters
               </h2>
             </div>
-            <h3 class="services__subtitle">Services and prices</h3>
-            <div class="services__container">
+            <h3 data-aos="fade-right" class="services__subtitle">Services and prices</h3>
+            <div data-aos="fade-right" class="services__container">
               <div class="services__column">
                 <ul class="services__box">
                   <li class="services__item">
@@ -249,13 +250,13 @@
               <div class="line-dark"></div>
               <h2 class="section-title">Old traditional school</h2>
             </div>
-            <h3 class="advantages__subtitle">¿Why people come to us?</h3>
-            <p class="advantages__text">
+            <h3 data-aos="fade-left" class="advantages__subtitle">¿Why people come to us?</h3>
+            <p data-aos="fade-left" class="advantages__text">
               Only good things are said about us. But it's better to see and
               feel 1 time than read 10 times.
             </p>
           </div>
-          <div class="advantages__box">
+          <div data-aos="fade-left" class="advantages__box">
             <div class="advantages__column-left">
               <div class="advantages__item column-left__item">
                 <div class="number__box">
@@ -303,9 +304,9 @@
                   For true enjoyers of the atmosphere
                 </h2>
               </div>
-              <h3 class="barbers__subtitle">Our barbers</h3>
-              <ul class="barbers__list">
-                <li class="barbers__item">
+              <h3 data-aos="fade-right" class="barbers__subtitle">Our barbers</h3>
+              <ul data-aos="fade-right" class="barbers__list">
+                <li data-aos="fade-right" class="barbers__item">
                   <div class="barbers__foto">
                     <picture>
                       <source
@@ -393,7 +394,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="barbers__item">
+                <li data-aos="fade-right" class="barbers__item">
                   <div class="barbers__foto">
                     <picture>
                       <source
@@ -475,7 +476,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="barbers__item">
+                <li data-aos="fade-right" class="barbers__item">
                   <div class="barbers__foto">
                     <picture>
                       <source
@@ -573,9 +574,9 @@
             <div class="line-dark"></div>
             <h2 class="section-title">In Latin, "barba" means "beard"</h2>
           </div>
-          <ul class="portfolio__list">
+          <ul  class="portfolio__list">
             <!-- barber cuts hair foto -->
-            <li class="portfolio__item">
+            <li data-aos="fade-left" class="portfolio__item">
               <picture>
                 <source
                   srcset="
@@ -606,7 +607,7 @@
               </picture>
             </li>
             <!-- the barber shaves the beard foto -->
-            <li class="portfolio__item">
+            <li data-aos="fade-left" class="portfolio__item">
               <picture>
                 <source
                   srcset="
@@ -637,7 +638,7 @@
               </picture>
             </li>
             <!-- a photo with a towel -->
-            <li class="portfolio__item">
+            <li data-aos="fade-left" class="portfolio__item">
               <picture>
                 <source
                   srcset="
@@ -668,7 +669,7 @@
               </picture>
             </li>
             <!-- the back of the client's head -->
-            <li class="portfolio__item">
+            <li data-aos="fade-left" class="portfolio__item">
               <picture>
                 <source
                   srcset="
@@ -706,8 +707,8 @@
         <div class="footer__container">
           <!-- Online-booking section -->
           <section id="online-booking" class="booking footer__item">
-            <div>
-              <h2 class="footer-title">Online-booking</h2>
+            <div data-aos="fade-right">
+              <h2  class="footer-title">Online-booking</h2>
               <div class="booking__box">
                 <form
                   name="online-booking form"
@@ -737,8 +738,8 @@
           </section>
           <!-- Contacts section-->
           <section id="contacts" class="contacts footer__item">
-            <div>
-              <h2 class="footer-title">Contacts</h2>
+            <div   data-aos-offset="50" data-aos="fade-left">
+              <h2  class="footer-title">Contacts</h2>
               <div class="contacts__box">
                 <address>
                   <ul class="contacts__list">
@@ -900,7 +901,13 @@
         </div>
       </div>
     </div>
-    <script src="./js/scroll.js"></script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       <script>
+       AOS.init({duration: 1000,});
+       AOS.refresh();
+      </script>   
+    <script src="./js/scroll-top.js"></script>
     <script src="./js/modal-close.js"></script>
     <script src="./js/form-submit.js"></script>
   </body>
