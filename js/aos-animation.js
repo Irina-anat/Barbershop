@@ -1,5 +1,5 @@
-AOS.init({ duration: 600,
-    offset: 200,
+AOS.init({ duration: 1000,
+    offset: 300,
     once: false, 
     disableMutationObserver: true  });
 AOS.refreshHard();
